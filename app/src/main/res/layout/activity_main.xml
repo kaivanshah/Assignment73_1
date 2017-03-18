@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kaivanshah.assignment73.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/LL_Name"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" android:id="@+id/tv_Name" android:textSize="25sp" android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" android:id="@+id/tv_NameValue" android:textSize="25sp" android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:id="@+id/LL_Age" android:layout_below="@id/LL_Name"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" android:id="@+id/tv_Age" android:textSize="25sp" android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" android:id="@+id/tv_AgeValue" android:textSize="25sp" android:layout_weight="1" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_vertical_margin" android:textSize="25sp" android:layout_centerHorizontal="true" android:textAlignment="center" android:text="Employee Photo" android:id="@+id/tv_Photo" android:layout_below="@id/LL_Age"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_below="@id/tv_Photo" android:id="@+id/IMG_Photo" />
+</RelativeLayout>
